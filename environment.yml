@@ -1,0 +1,15 @@
+name: basic_project
+channels:
+  - defaults
+dependencies:
+  - pip
+  - pip:
+    - numpy
+    - scipy
+    - pandas
+    - matplotlib
+    - scikit-learn
+    - jupyterlab
+    - yapf
+    - pylint
+    - dvc
