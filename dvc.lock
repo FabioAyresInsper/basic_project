@@ -1,0 +1,15 @@
+schema: '2.0'
+stages:
+  download:
+    cmd: python scripts/download_original_data.py
+    deps:
+    - path: scripts/download_original_data.py
+      hash: md5
+      md5: abaffc69d625a617dd8f8b5ac4a8db23
+      size: 544
+    outs:
+    - path: data/orig
+      hash: md5
+      md5: 4d97193039d333d4eb20976632216d26.dir
+      size: 351930
+      nfiles: 3
