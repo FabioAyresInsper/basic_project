@@ -13,3 +13,14 @@ stages:
       md5: 4d97193039d333d4eb20976632216d26.dir
       size: 351930
       nfiles: 3
+  evaluate:
+    cmd: python scripts/evaluate.py
+    deps:
+    - path: data/orig/winequality-red.csv
+      hash: md5
+      md5: 2daeecee174368f8a33b82c8cccae3a5
+      size: 84199
+    - path: scripts/evaluate.py
+      hash: md5
+      md5: 71ed1593ae796014348ec04fa10d9fc9
+      size: 884

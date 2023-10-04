@@ -5,3 +5,13 @@ stages:
     - scripts/download_original_data.py
     outs:
     - data/orig
+  evaluate:
+    cmd: python scripts/evaluate.py
+    deps:
+    - data/orig/winequality-red.csv
+    - scripts/evaluate.py
+metrics:
+- dvclive/metrics.json
+plots:
+- dvclive/plots/metrics:
+    x: step
